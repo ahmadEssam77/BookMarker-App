@@ -33,10 +33,10 @@ function displaySites() {
     var cartona = ``;
     for (var i = 0; i< myArray.length; i++) {
         cartona += `
-            <div class="col-md-3 result py-5">
+            <div class="firstDiv result py-5">
                 <h2>${myArray[i].websiteName}</h2>
             </div>
-            <div class="col-md-9 result py-5">
+            <div class="secDiv result py-5">
                 <a href="${myArray[i].websiteLink}" target="_blank" class="btn btn-primary" >Visit</a>
                 <button class="btn btn-danger" onclick="del(${i});">Delete</button>
             </div>

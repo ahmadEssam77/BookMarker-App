@@ -21,6 +21,14 @@ p {
     background-color: #eee;
 }
 
+.theParent .firstDiv {
+    width: 30%;
+}
+
+.theParent .secDiv {
+    width: 70%;
+}
+
 .result {
     background: linear-gradient(#eee, #fff);
 }
@@ -28,4 +36,18 @@ p {
 footer p {
     border-top: 1px solid;
     padding-top: 25px;
+}
+
+
+
+/* =============== Media Query =============== */
+
+@media screen and (max-width: 600px) {
+    .theParent .firstDiv {
+        width: 50%;
+    }
+
+    .theParent .secDiv {
+        width: 50%;
+    }
 }
